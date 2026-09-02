@@ -32,7 +32,7 @@ function Footer() {
             </div>
 
             <p>
-              Full-stack developer specialising in React, Next.js, Node.js, and MongoDB, with a focus on AI automation. I turn complex requirements into fast, maintainable products — from multi-tenant SaaS platforms to internal dashboards
+              Full-stack developer specialising in React, Next.js, Node.js, and MongoDB, with a focus on AI automation. I turn complex requirements into fast, maintainable products — from multi-tenant SaaS platforms to internal dashboards and AI-powered tools.
             </p>
 
             <div className="footer-availability">
