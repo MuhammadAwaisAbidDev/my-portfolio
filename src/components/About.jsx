@@ -44,10 +44,20 @@ function About() {
             third-party API integrations.
           </p>
 
-          <div className="about-buttons">
-            <a href="#contact" className="about-primary">
-              Work with me
-            </a>
+       <div className="about-buttons">
+  <a
+    href="#contact"
+    className="about-primary"
+    onClick={(e) => {
+      e.preventDefault();
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+  >
+    Work with me
+  </a>
+
 
             <a href="/resume.pdf" className="about-resume">
               👁 Resume

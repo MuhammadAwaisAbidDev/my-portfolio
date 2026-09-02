@@ -73,17 +73,33 @@ function Hero() {
             </p>
 
             {/* MAIN BUTTONS */}
-            <div className="hero-buttons">
+<div className="hero-buttons">
 
-              <a href="#contact" className="btn-primary">
-                Get in touch
-              </a>
+  <a
+    href="#contact"
+    className="btn-primary"
+    onClick={(e) => {
+      e.preventDefault();
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+  >
+    Get in touch
+  </a>
 
-              <a href="/work" className="btn-secondary">
-                View my work
-              </a>
+  <a
+    href="#work"
+    className="btn-secondary"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.hash = "work";
+    }}
+  >
+    View my work
+  </a>
 
-            </div>
+</div>
 
       <div className="hero-socials">
 

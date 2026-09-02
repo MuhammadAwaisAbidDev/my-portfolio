@@ -45,57 +45,118 @@ function Footer() {
 
           {/* EXPLORE */}
 
-          <div className="footer-column">
+          {/* EXPLORE */}
 
-            <span className="footer-heading">
-              EXPLORE
-            </span>
+<div className="footer-column">
 
-            <Link to="/work">
-              Work
-            </Link>
+  <span className="footer-heading">
+    EXPLORE
+  </span>
 
-            <Link to="/services">
-              Services
-            </Link>
+  <Link to="/work">
+    Work
+  </Link>
 
-            <Link to="/hire">
-              Hire Me
-            </Link>
+  <Link to="/services">
+    Services
+  </Link>
 
-            <a href="#contact">
-              Contact
-            </a>
+  <Link to="/hire">
+    Hire Me
+  </Link>
 
-          </div>
+  <a
+    href="#contact"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
+
+      setTimeout(() => {
+        document.getElementById("contact")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Contact
+  </a>
+
+</div>
 
 
-          {/* MORE */}
+{/* MORE */}
 
-          <div className="footer-column">
+<div className="footer-column">
 
-            <span className="footer-heading">
-              MORE
-            </span>
+  <span className="footer-heading">
+    MORE
+  </span>
 
-            <a href="#about">
-              About
-            </a>
+  <a
+    href="#about"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
 
-            <a href="#skills">
-              Skills
-            </a>
+      setTimeout(() => {
+        document.getElementById("about")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    About
+  </a>
 
-            <a href="#experience">
-              Experience
-            </a>
+  <a
+    href="#skills"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
 
-            <a href="#testimonials">
-              Testimonials
-            </a>
+      setTimeout(() => {
+        document.getElementById("skills")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Skills
+  </a>
 
-          </div>
+  <a
+    href="#experience"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
 
+      setTimeout(() => {
+        document.getElementById("experience")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Experience
+  </a>
+
+  <a
+    href="#testimonials"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
+
+      setTimeout(() => {
+        document.getElementById("testimonials")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Testimonials
+  </a>
+
+</div>
 
           {/* CONNECT */}
 
