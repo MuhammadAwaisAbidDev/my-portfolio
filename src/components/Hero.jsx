@@ -128,7 +128,7 @@ function Hero() {
             <div className="hero-image-circle">
 
               <img
-                src="/assets/1.jpeg"
+               src={`${process.env.PUBLIC_URL}/assets/1.jpeg`}
                 alt="Muhammad Awais Abid"
               />
 
