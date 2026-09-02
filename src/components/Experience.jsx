@@ -248,7 +248,7 @@ function Experience() {
     <div className="education-content">
       <div className="education-top">
         <h3>Bachelor of Science, Software Engineering</h3>
-        <span>2024 — 2027</span>
+        <span>2025 — 2029</span>
       </div>
 
       <h4>National University of Modern Languages (NUML)</h4>
