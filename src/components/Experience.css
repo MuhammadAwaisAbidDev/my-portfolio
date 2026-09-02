@@ -1,0 +1,735 @@
+/* =====================================
+   EXPERIENCE SECTION
+===================================== */
+
+#experience.experience-section {
+  width: 100%;
+  min-height: 700px;
+
+  padding: 90px 30px 100px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(91, 78, 190, 0.10),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #0b1626 0%,
+      #101b2b 52%,
+      #092535 100%
+    );
+}
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+#experience .experience-container {
+  width: 100%;
+  max-width: 1220px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+#experience .experience-heading {
+  width: 100%;
+
+  margin: 0 auto 62px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#experience .experience-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #7d8cff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+
+#experience .experience-heading h2 {
+  margin: 0;
+
+  color: #f5f7fb;
+
+  font-size: 38px;
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+#experience .experience-heading-line {
+  width: 80px;
+  height: 4px;
+
+  margin: 16px 0 20px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #6655f5,
+    #9a62ff
+  );
+}
+
+
+#experience .experience-heading p {
+  margin: 0;
+
+  color: #8d9aac;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =====================================
+   MAIN GRID
+===================================== */
+
+#experience .experience-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1.65fr 1fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+
+/* =====================================
+   COLUMN TITLE
+===================================== */
+
+#experience .column-title {
+  margin-bottom: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #a8b4c5;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+
+#experience .column-title svg {
+  color: #7d8cff;
+
+  font-size: 13px;
+}
+
+
+/* =====================================
+   WORK TIMELINE
+===================================== */
+
+#experience .experience-timeline {
+  position: relative;
+
+  padding-left: 32px;
+}
+
+
+#experience .experience-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 6px;
+  top: 7px;
+  bottom: 8px;
+
+  width: 1px;
+
+  background: #30445a;
+}
+
+
+/* =====================================
+   EXPERIENCE ITEM
+===================================== */
+
+#experience .experience-item {
+  position: relative;
+
+  padding-bottom: 52px;
+}
+
+
+#experience .experience-item:last-child {
+  padding-bottom: 0;
+}
+
+
+/* =====================================
+   TIMELINE DOT
+===================================== */
+
+#experience .experience-dot {
+  position: absolute;
+
+  left: -32px;
+  top: 7px;
+
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+
+  background: #6655f5;
+
+  border: 3px solid #0b1626;
+
+  box-shadow: 0 0 0 1px #6655f5;
+
+  box-sizing: content-box;
+}
+
+
+/* =====================================
+   EXPERIENCE TOP
+===================================== */
+
+#experience .experience-top {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 7px;
+}
+
+
+#experience .experience-top h3 {
+  margin: 0;
+
+  color: #edf1f7;
+
+  font-size: 19px;
+  line-height: 1.4;
+
+  font-weight: 700;
+}
+
+
+#experience .experience-duration {
+  flex-shrink: 0;
+
+  color: #7f8da1;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================
+   COMPANY
+===================================== */
+
+#experience .experience-company {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 16px;
+
+  font-size: 14px;
+}
+
+
+#experience .company-name {
+  color: #7467ff;
+
+  font-weight: 600;
+}
+
+
+#experience .company-link {
+  color: #7467ff;
+
+  font-size: 9px;
+}
+
+
+#experience .separator {
+  color: #536174;
+}
+
+
+#experience .job-type,
+#experience .location {
+  color: #8b98a9;
+}
+
+
+#experience .location {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+#experience .location svg {
+  font-size: 10px;
+}
+
+
+/* =====================================
+   DESCRIPTION
+===================================== */
+
+#experience .experience-description {
+  max-width: 720px;
+
+  margin: 0 0 14px;
+
+  color: #8d9aac;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================
+   EXPERIENCE POINTS
+===================================== */
+
+#experience .experience-points {
+  margin: 0 0 18px;
+
+  padding-left: 17px;
+
+  color: #8d9aac;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+#experience .experience-points li {
+  margin-bottom: 7px;
+
+  padding-left: 1px;
+}
+
+
+#experience .experience-points li::marker {
+  color: #8995a7;
+}
+
+
+/* =====================================
+   TECHNOLOGY TAGS
+===================================== */
+
+#experience .experience-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+
+#experience .experience-tags span {
+  padding: 5px 10px;
+
+  border-radius: 12px;
+
+  background: #152335;
+
+  border: 1px solid #293d52;
+
+  color: #8996a8;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  font-family: monospace;
+
+  transition: all 0.2s ease;
+}
+
+
+#experience .experience-tags span:hover {
+  color: #c4ccda;
+
+  border-color: #5668ff;
+}
+
+
+/* =====================================
+   EDUCATION
+===================================== */
+
+#experience .education-item {
+  position: relative;
+
+  padding-left: 32px;
+}
+
+
+#experience .education-item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 6px;
+  top: 7px;
+  bottom: 0;
+
+  width: 1px;
+
+  background: #30445a;
+}
+
+
+#experience .education-dot {
+  position: absolute;
+
+  left: 1px;
+  top: 7px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #0b1626;
+
+  border: 2px solid #c5cedb;
+
+  z-index: 2;
+}
+
+
+/* =====================================
+   EDUCATION TOP
+===================================== */
+
+#experience .education-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  margin-bottom: 5px;
+}
+
+
+#experience .education-top h3 {
+  margin: 0;
+
+  color: #edf1f7;
+
+  font-size: 17px;
+
+  line-height: 1.45;
+
+  font-weight: 700;
+}
+
+
+#experience .education-top span {
+  flex-shrink: 0;
+
+  color: #7f8da1;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================
+   UNIVERSITY
+===================================== */
+
+#experience .education-content h4 {
+  margin: 0 0 3px;
+
+  color: #7467ff;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  font-weight: 600;
+}
+
+
+#experience .education-location {
+  margin: 0 0 18px;
+
+  color: #8b98a9;
+
+  font-size: 13px;
+}
+
+
+#experience .education-description {
+  margin: 0;
+
+  color: #8d9aac;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================
+   LIGHT MODE
+===================================== */
+
+.light-theme #experience.experience-section {
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(105, 88, 230, 0.07),
+      transparent 40%
+    ),
+    #f5f7fb;
+}
+
+
+.light-theme #experience .experience-heading h2 {
+  color: #111827;
+}
+
+
+.light-theme #experience .experience-heading p {
+  color: #657286;
+}
+
+
+.light-theme #experience .column-title {
+  color: #68758a;
+}
+
+
+.light-theme #experience .experience-timeline::before,
+.light-theme #experience .education-item::before {
+  background: #d5dce6;
+}
+
+
+.light-theme #experience .experience-dot {
+  border-color: #f5f7fb;
+}
+
+
+.light-theme #experience .education-dot {
+  background: #f5f7fb;
+
+  border-color: #9aa7b8;
+}
+
+
+.light-theme #experience .experience-top h3,
+.light-theme #experience .education-top h3 {
+  color: #182131;
+}
+
+
+.light-theme #experience .experience-description,
+.light-theme #experience .experience-points,
+.light-theme #experience .education-description {
+  color: #657286;
+}
+
+
+.light-theme #experience .experience-tags span {
+  background: #f1f4f8;
+
+  border-color: #d8e0ea;
+
+  color: #68758a;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+  #experience.experience-section {
+    padding: 75px 25px 85px;
+  }
+
+  #experience .experience-grid {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  #experience .education-column {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+  #experience.experience-section {
+    padding: 65px 18px 70px;
+  }
+
+
+  #experience .experience-heading {
+    margin-bottom: 45px;
+  }
+
+
+  #experience .experience-heading h2 {
+    font-size: 30px;
+  }
+
+
+  #experience .experience-heading p {
+    font-size: 14px;
+  }
+
+
+  #experience .experience-grid {
+    gap: 45px;
+  }
+
+
+  #experience .experience-timeline {
+    padding-left: 25px;
+  }
+
+
+  #experience .experience-dot {
+    left: -25px;
+  }
+
+
+  #experience .experience-timeline::before {
+    left: 5px;
+  }
+
+
+  #experience .experience-item {
+    padding-bottom: 40px;
+  }
+
+
+  #experience .experience-top {
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+
+  #experience .experience-top h3 {
+    font-size: 17px;
+  }
+
+
+  #experience .experience-duration {
+    font-size: 11px;
+  }
+
+
+  #experience .experience-company {
+    font-size: 13px;
+  }
+
+
+  #experience .experience-description,
+  #experience .experience-points,
+  #experience .education-description {
+    font-size: 13px;
+  }
+
+
+  #experience .education-item {
+    padding-left: 25px;
+  }
+
+
+  #experience .education-dot {
+    left: 0;
+  }
+
+
+  #experience .education-item::before {
+    left: 5px;
+  }
+
+
+  #experience .education-top {
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+
+  #experience .education-top h3 {
+    font-size: 16px;
+  }
+
+}

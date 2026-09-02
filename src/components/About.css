@@ -1,0 +1,421 @@
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
+.about-section {
+  width: 100%;
+  min-height: 700px;
+
+  padding: 90px 70px 100px;
+
+  background: #071221;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+.about-heading {
+  text-align: center;
+
+  margin-bottom: 58px;
+}
+
+.about-heading > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #7186ff;
+
+  font-size: 11px;
+
+  letter-spacing: 5px;
+
+  font-weight: 600;
+}
+
+.about-heading h2 {
+  margin: 0;
+
+  color: #f5f7fb;
+
+  font-size: 38px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.about-line {
+  width: 80px;
+  height: 4px;
+
+  margin: 16px auto 20px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #7354f5,
+    #9b55ee
+  );
+}
+
+.about-heading p {
+  margin: 0;
+
+  color: #9aa8ba;
+
+  font-size: 17px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.about-container {
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 60px;
+
+  align-items: start;
+}
+
+
+/* =====================================
+   LEFT TEXT
+===================================== */
+
+.about-text {
+  padding-top: 4px;
+}
+
+.about-text p {
+  margin: 0 0 25px;
+
+  color: #c0c9d6;
+
+  font-size: 18px;
+
+  line-height: 1.65;
+
+  font-weight: 500;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.about-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+.about-primary,
+.about-resume {
+  height: 48px;
+
+  padding: 0 24px;
+
+  border-radius: 25px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+.about-primary {
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #7354f5,
+    #9555ee
+  );
+
+  box-shadow:
+    0 10px 25px rgba(115, 84, 245, 0.25);
+}
+
+.about-primary:hover {
+  transform: translateY(-3px);
+}
+
+.about-resume {
+  color: #aab5c5;
+
+  background: transparent;
+
+  border: 1px solid #34465b;
+}
+
+.about-resume:hover {
+  color: #ffffff;
+
+  border-color: #7186ff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =====================================
+   RIGHT CARDS
+===================================== */
+
+.about-cards {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.about-card {
+  min-height: 88px;
+
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  background: #1b2b3a;
+
+  border: 1px solid #34485b;
+
+  border-radius: 12px;
+
+  box-sizing: border-box;
+
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #586dff;
+
+  background: #1e3041;
+}
+
+
+/* =====================================
+   ICON
+===================================== */
+
+.about-icon {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #e3e5eb;
+
+  font-size: 20px;
+}
+
+
+/* =====================================
+   CARD TEXT
+===================================== */
+
+.about-card span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #78879a;
+
+  font-size: 12px;
+
+  letter-spacing: 3px;
+
+  font-weight: 600;
+}
+
+.about-card h3 {
+  margin: 0;
+
+  color: #f1f4f8;
+
+  font-size: 16px;
+
+  line-height: 1.4;
+
+  font-weight: 500;
+}
+
+
+/* =====================================
+   LIGHT MODE
+===================================== */
+
+.light-theme .about-section {
+  background: #f5f7fb;
+
+  color: #111827;
+}
+
+.light-theme .about-heading h2 {
+  color: #111827;
+}
+
+.light-theme .about-heading p {
+  color: #657286;
+}
+
+.light-theme .about-text p {
+  color: #4b5563;
+}
+
+.light-theme .about-card {
+  background: #ffffff;
+
+  border-color: #d8e0eb;
+}
+
+.light-theme .about-card:hover {
+  background: #ffffff;
+
+  border-color: #7186ff;
+}
+
+.light-theme .about-card h3 {
+  color: #1f2937;
+}
+
+.light-theme .about-resume {
+  color: #536174;
+
+  border-color: #d0d8e4;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+  .about-section {
+    padding: 75px 35px 80px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .about-text {
+    max-width: 750px;
+
+    margin: 0 auto;
+  }
+
+  .about-cards {
+    max-width: 750px;
+
+    width: 100%;
+
+    margin: 0 auto;
+  }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 500px) {
+
+  .about-section {
+    padding: 65px 20px 70px;
+  }
+
+  .about-heading {
+    margin-bottom: 40px;
+  }
+
+  .about-heading h2 {
+    font-size: 32px;
+  }
+
+  .about-heading p {
+    font-size: 15px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .about-primary,
+  .about-resume {
+    width: 100%;
+  }
+
+  .about-card {
+    padding: 16px;
+  }
+
+  .about-card h3 {
+    font-size: 13px;
+  }
+}

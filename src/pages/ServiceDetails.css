@@ -1,0 +1,460 @@
+/* =================================
+   SERVICE DETAILS
+================================= */
+
+.service-details-page {
+  min-height: 100vh;
+  background: #07111f;
+  color: #f5f7ff;
+}
+
+/* CONTAINER */
+
+.service-detail-container {
+  width: min(1140px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* =================================
+   HERO
+================================= */
+
+.service-detail-hero {
+  padding-top: 135px;
+  padding-bottom: 70px;
+
+  background: #0d1828;
+  border-bottom: 1px solid #26374b;
+}
+
+.service-detail-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 35px;
+
+  color: #77879b;
+  font-size: 13px;
+}
+
+.service-detail-breadcrumb a {
+  color: #83a8d5;
+  text-decoration: none;
+}
+
+.service-detail-breadcrumb a:hover {
+  color: #8b7cff;
+}
+
+.service-detail-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.service-detail-icon {
+  flex-shrink: 0;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #293e63;
+  color: #8593ff;
+
+  font-size: 29px;
+}
+
+.service-detail-label {
+  margin-bottom: 10px;
+
+  color: #8290ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.service-detail-heading h1 {
+  margin: 0;
+
+  max-width: 900px;
+
+  color: #f7f8fc;
+
+  font-size: clamp(42px, 5vw, 62px);
+  line-height: 1.08;
+
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.service-detail-heading p {
+  max-width: 760px;
+
+  margin: 20px 0 0;
+
+  color: #9daabd;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ACTION */
+
+.service-detail-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+.discuss-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 13px 22px;
+
+  border-radius: 30px;
+
+  background: linear-gradient(90deg, #6366f1, #9955ee);
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.starting-price {
+  color: #78899e;
+  font-size: 14px;
+}
+
+.starting-price strong {
+  color: #e9edf5;
+}
+
+/* =================================
+   CONTENT
+================================= */
+
+.service-detail-content {
+  padding: 80px 0 110px;
+}
+
+.service-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 70px;
+}
+
+/* =================================
+   MAIN
+================================= */
+
+.service-main {
+  min-width: 0;
+}
+
+.service-section {
+  margin-bottom: 65px;
+}
+
+.service-section-label {
+  margin-bottom: 12px;
+
+  color: #7e8dff;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.service-section h2 {
+  margin: 0 0 25px;
+
+  color: #f5f7fb;
+
+  font-size: 28px;
+  font-weight: 750;
+}
+
+.service-section p {
+  max-width: 750px;
+
+  margin: 0 0 18px;
+
+  color: #9daabc;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* BENEFITS */
+
+.service-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-benefit {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #d8e0eb;
+
+  font-size: 16px;
+}
+
+.service-benefit svg {
+  flex-shrink: 0;
+
+  color: #00d5a4;
+
+  font-size: 18px;
+}
+
+/* =================================
+   SIDEBAR
+================================= */
+
+.service-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service-info-card {
+  padding: 25px;
+
+  background: #1a2a3a;
+
+  border: 1px solid #34475b;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-label {
+  margin-bottom: 15px;
+
+  color: #718197;
+
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.service-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.service-tech-list span {
+  padding: 6px 10px;
+
+  background: #101e2e;
+
+  border: 1px solid #34475b;
+  border-radius: 20px;
+
+  color: #aebaca;
+
+  font-size: 11px;
+}
+
+.service-info-card h3 {
+  margin: 0 0 10px;
+
+  color: #f1f4fa;
+
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.service-info-card p {
+  margin: 0;
+
+  color: #8f9eb0;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sidebar-price {
+  color: #ffffff;
+  font-size: 27px;
+}
+
+/* =================================
+   BACK LINK
+================================= */
+
+.all-services-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #8290ff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.all-services-link:hover {
+  color: #a49cff;
+}
+
+/* =================================
+   NOT FOUND
+================================= */
+
+.service-not-found {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  background: #07111f;
+  color: white;
+}
+
+.service-not-found h1 {
+  font-size: 40px;
+}
+
+.service-not-found a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #8290ff;
+  text-decoration: none;
+}
+
+/* =================================
+   LIGHT MODE
+================================= */
+
+.light-theme .service-details-page {
+  background: #f4f7fb;
+  color: #0d1b2a;
+}
+
+.light-theme .service-detail-hero {
+  background: #f8fafc;
+  border-color: #dce4ee;
+}
+
+.light-theme .service-detail-heading h1 {
+  color: #0b1728;
+}
+
+.light-theme .service-detail-heading p {
+  color: #65758a;
+}
+
+.light-theme .service-section h2 {
+  color: #0c1b2c;
+}
+
+.light-theme .service-section p {
+  color: #64758a;
+}
+
+.light-theme .service-benefit {
+  color: #33455a;
+}
+
+.light-theme .service-info-card {
+  background: white;
+  border-color: #d7e0eb;
+  box-shadow: 0 8px 25px rgba(20, 40, 70, 0.05);
+}
+
+.light-theme .service-info-card h3 {
+  color: #0d1b2c;
+}
+
+.light-theme .service-info-card p {
+  color: #68788b;
+}
+
+.light-theme .service-tech-list span {
+  background: #f3f6fa;
+  border-color: #d7e0eb;
+  color: #607187;
+}
+
+.light-theme .sidebar-price {
+  color: #17263a;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 850px) {
+  .service-content-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .service-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+  .service-detail-container {
+    width: min(100% - 30px, 1140px);
+  }
+
+  .service-detail-hero {
+    padding-top: 110px;
+    padding-bottom: 55px;
+  }
+
+  .service-detail-heading {
+    flex-direction: column;
+  }
+
+  .service-detail-heading h1 {
+    font-size: 42px;
+  }
+
+  .service-detail-action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-detail-content {
+    padding: 55px 0 80px;
+  }
+
+  .service-sidebar {
+    grid-template-columns: 1fr;
+  }
+}

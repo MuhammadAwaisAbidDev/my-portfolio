@@ -1,0 +1,643 @@
+/* ================================
+   WORK PAGE
+================================ */
+
+.work-page {
+  min-height: 100vh;
+  padding: 60px 0 80px;
+
+  background: #0b1726;
+  color: #ffffff;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.work-container {
+  width: min(1140px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.work-header {
+  padding: 55px 0 60px;
+  border-bottom: 1px solid #26384b;
+}
+
+.work-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-size: 13px;
+  color: #7890a8;
+}
+
+.work-breadcrumb button {
+  border: none;
+  background: transparent;
+  color: #8ea5bd;
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+}
+
+.work-breadcrumb button:hover {
+  color: #9b7cff;
+}
+
+.work-heading-label {
+  display: block;
+  margin-bottom: 14px;
+  color: #8c72ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.work-heading h1 {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 58px);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.work-heading p {
+  margin: 22px 0 0;
+  max-width: 650px;
+  color: #8ea5bd;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   PROJECT SECTION
+================================ */
+
+.work-projects {
+  padding: 70px 0 100px;
+}
+
+
+/* ================================
+   GRID
+================================ */
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.work-project-card {
+  overflow: hidden;
+  background: #1a2a3a;
+  border: 1px solid #304458;
+  border-radius: 16px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.work-project-card:hover {
+  transform: translateY(-6px);
+  border-color: #596d82;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================================
+   PROJECT PREVIEW
+================================ */
+
+.work-project-image {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ================================
+   COLORS
+================================ */
+
+.project-color-1 {
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(94, 87, 255, 0.55),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #18355b,
+      #0c2739
+    );
+}
+
+.project-color-2 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(42, 105, 255, 0.6),
+      transparent 48%
+    ),
+    linear-gradient(
+      135deg,
+      #112f46,
+      #12334a
+    );
+}
+
+.project-color-3 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(0, 225, 169, 0.5),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #07564d,
+      #07333b
+    );
+}
+
+.project-color-4 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(255, 170, 55, 0.4),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #4d301d,
+      #24303c
+    );
+}
+
+.project-color-5 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(255, 82, 145, 0.4),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #44223c,
+      #202b40
+    );
+}
+
+.project-color-6 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(70, 160, 255, 0.45),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #183b57,
+      #172638
+    );
+}
+
+.project-color-7 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(144, 93, 255, 0.5),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #35245e,
+      #18293d
+    );
+}
+
+.project-color-8 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(0, 194, 255, 0.4),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #143f51,
+      #192b3c
+    );
+}
+
+
+/* ================================
+   GRID PATTERN
+================================ */
+
+.work-project-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+  opacity: 0.5;
+}
+
+
+/* ================================
+   FEATURED
+================================ */
+
+.project-featured {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
+
+  padding: 7px 13px;
+
+  border-radius: 20px;
+
+  background: #8064ff;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* ================================
+   STATUS
+================================ */
+
+.work-project-status {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 13px;
+
+  background: rgba(4, 18, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  color: #dce8f2;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.work-project-status span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #00e6a2;
+
+  box-shadow: 0 0 10px rgba(0, 230, 162, 0.5);
+}
+
+
+/* ================================
+   PREVIEW CONTENT
+================================ */
+
+.project-preview-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+}
+
+.project-preview-short {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 800;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  letter-spacing: 1px;
+}
+
+.project-preview-name {
+  margin-top: 18px;
+
+  color: #a9c2d9;
+
+  font-size: 13px;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.work-project-content {
+  padding: 24px 20px 20px;
+}
+
+.work-project-category {
+  display: block;
+
+  margin-bottom: 13px;
+
+  color: #718aa3;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.work-project-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 750;
+}
+
+.work-project-content p {
+  margin: 12px 0 18px;
+
+  color: #9db1c4;
+
+  font-size: 14px;
+  line-height: 1.65;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* ================================
+   TECHNOLOGIES
+================================ */
+
+.work-project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  min-height: 30px;
+}
+
+.work-project-technologies span {
+  padding: 6px 10px;
+
+  border-radius: 15px;
+
+  background: #17344e;
+  border: 1px solid #20435f;
+
+  color: #78a9d3;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* ================================
+   BOTTOM
+================================ */
+
+.work-project-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 22px;
+  padding-top: 18px;
+
+  border-top: 1px solid #304354;
+}
+
+
+/* ================================
+   CASE STUDY
+================================ */
+
+.work-case-study {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #8b78ff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: gap 0.2s ease;
+}
+
+.work-case-study:hover {
+  gap: 12px;
+}
+
+.work-case-study svg {
+  font-size: 12px;
+}
+
+
+/* ================================
+   EXTERNAL LINK
+================================ */
+
+.work-external-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  color: #71879b;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.work-external-link:hover {
+  color: #ffffff;
+  background: #263b50;
+}
+
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+.light-theme .work-page {
+  background: #f5f7fb;
+  color: #152033;
+}
+
+.light-theme .work-header {
+  border-color: #dce3ec;
+}
+
+.light-theme .work-breadcrumb,
+.light-theme .work-breadcrumb button {
+  color: #68788d;
+}
+
+.light-theme .work-heading h1 {
+  color: #152033;
+}
+
+.light-theme .work-heading p {
+  color: #68788d;
+}
+
+.light-theme .work-project-card {
+  background: #ffffff;
+  border-color: #dce3ec;
+}
+
+.light-theme .work-project-card:hover {
+  border-color: #c3ccda;
+  box-shadow: 0 18px 40px rgba(31, 45, 61, 0.1);
+}
+
+.light-theme .work-project-content h2 {
+  color: #152033;
+}
+
+.light-theme .work-project-content p {
+  color: #66778b;
+}
+
+.light-theme .work-project-category {
+  color: #718096;
+}
+
+.light-theme .work-project-bottom {
+  border-color: #e2e7ee;
+}
+
+.light-theme .work-project-technologies span {
+  background: #eef3f8;
+  border-color: #dce5ef;
+  color: #54708e;
+}
+
+.light-theme .work-external-link:hover {
+  background: #edf1f6;
+  color: #26384b;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 650px) {
+
+  .work-container {
+    width: min(100% - 28px, 1140px);
+  }
+
+  .work-header {
+    padding: 40px 0 45px;
+  }
+
+  .work-projects {
+    padding: 45px 0 70px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .work-project-image {
+    height: 230px;
+  }
+
+  .work-heading h1 {
+    font-size: 42px;
+  }
+
+  .work-heading p {
+    font-size: 15px;
+  }
+
+}
+
+/* College Management System */
+.project-color-9 {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(45, 212, 191, 0.28),
+      transparent 42%
+    ),
+    linear-gradient(135deg, #063b4a 0%, #10283b 100%);
+}
